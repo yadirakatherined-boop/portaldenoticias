@@ -1,0 +1,66 @@
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noticias Hoy</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+<script>
+
+function cargar(pagina){
+
+var xhttp = new XMLHttpRequest();
+
+xhttp.onreadystatechange = function(){
+
+if(this.readyState == 4 && this.status == 200){
+document.getElementById("contenido").innerHTML = this.responseText;
+}
+
+};
+
+xhttp.open("GET", pagina, true);
+xhttp.send();
+
+}
+
+window.onload=function(){
+cargar("inicio.html");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>NOTICIAS HOY</h1>
+<p>Portal de noticias digital</p>
+</header>
+
+<nav>
+
+<a href="#" onclick="cargar('inicio.html')">INICIO</a>
+<a href="#" onclick="cargar('nacional.html')">NACIONAL</a>
+<a href="#" onclick="cargar('deportes.html')">DEPORTES</a>
+<a href="#" onclick="cargar('espectaculos.html')">ESPECTÁCULOS</a>
+<a href="#" onclick="cargar('cultura.html')">CULTURA</a>
+<a href="#" onclick="cargar('contacto.html')">CONTACTO</a>
+
+</nav>
+
+<main id="contenido">
+</main>
+
+<footer>
+<p>Noticias Hoy - 2026</p>
+</footer>
+
+</body>
+</html>
+```

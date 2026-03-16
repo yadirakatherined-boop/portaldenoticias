@@ -1,0 +1,110 @@
+
+body{
+margin:0;
+font-family:Arial;
+background:#FFEDC7;
+}
+
+/* HEADER */
+
+header{
+background:#EB4C4C;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* MENÚ */
+
+nav{
+background:#FF7070;
+text-align:center;
+padding:12px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:12px 18px;
+display:inline-block;
+font-weight:bold;
+}
+
+nav a:hover{
+background:#FFA6A6;
+color:black;
+}
+
+/* CONTENIDO */
+
+main{
+max-width:1000px;
+margin:auto;
+background:white;
+padding:20px;
+}
+
+/* ARTÍCULOS */
+
+article{
+margin-bottom:30px;
+border-bottom:2px solid #FFA6A6;
+padding-bottom:15px;
+}
+
+article img{
+width:100%;
+height:auto;
+}
+
+/* TÍTULOS */
+
+h2{
+color:#EB4C4C;
+}
+
+h3{
+color:#FF7070;
+}
+
+/* FORMULARIO */
+
+input, textarea{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+border:2px solid #FFA6A6;
+}
+
+button{
+background:#EB4C4C;
+color:white;
+padding:10px 20px;
+border:none;
+cursor:pointer;
+}
+
+button:hover{
+background:#FF7070;
+}
+
+/* FOOTER */
+
+footer{
+background:#EB4C4C;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+nav a{
+display:block;
+border-top:1px solid #FFA6A6;
+}
+
+}
