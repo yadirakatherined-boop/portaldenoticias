@@ -1,2 +1,0 @@
-# portaldenoticias
-noticias al día
